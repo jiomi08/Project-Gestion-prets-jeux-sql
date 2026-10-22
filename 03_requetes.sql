@@ -1,4 +1,4 @@
--- 1. Afficher l'historique des emprunts
+-- 1. Afficher l'historique des emprunt
 
 SELECT
     EMPRUNT.id_emprunt,
@@ -61,7 +61,7 @@ WHERE EMPRUNT.dateRet_reel IS NULL
 ORDER BY EMPRUNT.dateRet_prevue;
 
 
--- 4. Compter les boîtes possédées pour chaque jeu, y compris les jeux sans boîte.
+-- 4. Compter les boites possédees pour chaque jeu, y compris les jeux sans boîte.
 
 SELECT
     JEU.id_jeu,
@@ -73,7 +73,7 @@ LEFT JOIN BOITE
 GROUP BY JEU.id_jeu, JEU.titre;
 
 
--- 5. Afficher les boîtes disponibles :
+-- 5. Afficher les boîtes disponible :
 
 SELECT
     BOITE.id_boite,
